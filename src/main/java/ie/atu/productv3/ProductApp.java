@@ -21,10 +21,12 @@ public class ProductApp {
             // either a book object or a software object could be returned from the ProductDb class.
             // We need to update the code so that we can handle either type of object returned.
 
+            Product p = ProductDB.getProduct(productCode);
+
             // Book or a Software Object? = ProductDB.getProduct(productCode);
 
             // display the output
-            /*
+
             System.out.println();
             if (p != null) {
                 System.out.println("Description: " + p.toString());
@@ -40,7 +42,7 @@ public class ProductApp {
             System.out.print("Continue? (y/n): ");
             choice = sc.nextLine();
             System.out.println();
-            */
+
         }
     }
 }
